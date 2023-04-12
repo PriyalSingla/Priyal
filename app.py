@@ -13,12 +13,10 @@ heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
 
-    selected = option_menu('Multiple Disease Prediction System',
-
+    selected = option_menu('Diabetes and Heart Disease Prediction',
                            ['Diabetes Prediction',
-                            'Heart Disease Prediction',
-                            'Parkinsons Prediction'],
-                           icons=['activity', 'heart', 'person'],
+                            'Heart Disease Prediction'],
+                           icons=['activity', 'heart'],
                            default_index=0)
 
 
@@ -26,7 +24,7 @@ with st.sidebar:
 if (selected == 'Diabetes Prediction'):
 
     # page title
-    st.title('Diabetes Prediction using ML')
+    st.title('Diabetes Prediction')
 
     # getting the input data from the user
     col1, col2, col3 = st.columns(3)
