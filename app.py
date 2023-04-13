@@ -86,7 +86,7 @@ if (selected == 'Heart Disease Prediction'):
         sex = st.text_input('Sex: 1(Male), 0(Female)')
 
     with col3:
-        cp = st.text_input('Chest Pain types')
+        cp = st.text_input('Chest Pain types: values(0-3)')
 
     with col1:
         trestbps = st.text_input('Resting Blood Pressure')
@@ -117,7 +117,7 @@ if (selected == 'Heart Disease Prediction'):
 
     with col1:
         thal = st.text_input(
-            'thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+            'thal: 1 = normal; 2 = fixed defect; 3 = reversable defect')
 
     # code for Prediction
     heart_diagnosis = ''
